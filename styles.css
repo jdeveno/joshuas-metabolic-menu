@@ -1,0 +1,40 @@
+body {
+  font-family: Arial, sans-serif;
+  padding: 20px;
+  max-width: 900px;
+  margin: auto;
+  background-color: #f9fafb;
+}
+
+h1 {
+  text-align: center;
+}
+
+#legend {
+  margin-bottom: 20px;
+  font-size: 14px;
+}
+
+button {
+  padding: 10px 15px;
+  margin: 5px;
+  cursor: pointer;
+  border: none;
+  border-radius: 6px;
+  background-color: #1f2937;
+  color: white;
+}
+
+button:hover {
+  opacity: 0.8;
+}
+
+.card {
+  border-radius: 8px;
+  padding: 15px;
+  margin-top: 10px;
+}
+
+.green { background-color: #d1fae5; }
+.yellow { background-color: #fef3c7; }
+.red { background-color: #fee2e2; }
