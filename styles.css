@@ -1,40 +1,61 @@
 body {
-  font-family: Arial, sans-serif;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
   padding: 20px;
-  max-width: 900px;
+  max-width: 1100px;
   margin: auto;
-  background-color: #f9fafb;
+  background-color: #f3f4f6;
 }
 
 h1 {
   text-align: center;
+  margin-bottom: 10px;
 }
 
 #legend {
-  margin-bottom: 20px;
+  text-align: center;
+  margin-bottom: 30px;
   font-size: 14px;
+  color: #374151;
+}
+
+/* CATEGORY GRID */
+#categories {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 15px;
+  margin-bottom: 30px;
 }
 
 button {
-  padding: 10px 15px;
-  margin: 5px;
+  padding: 15px;
   cursor: pointer;
   border: none;
-  border-radius: 6px;
-  background-color: #1f2937;
+  border-radius: 10px;
+  background-color: #111827;
   color: white;
+  font-weight: 600;
+  transition: all 0.2s ease;
 }
 
 button:hover {
-  opacity: 0.8;
+  transform: translateY(-2px);
+  opacity: 0.9;
 }
 
+/* RECIPE CARDS */
 .card {
-  border-radius: 8px;
-  padding: 15px;
-  margin-top: 10px;
+  border-radius: 12px;
+  padding: 20px;
+  margin-bottom: 15px;
+  background-color: white;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+  cursor: pointer;
 }
 
-.green { background-color: #d1fae5; }
-.yellow { background-color: #fef3c7; }
-.red { background-color: #fee2e2; }
+.green { border-left: 6px solid #22c55e; }
+.yellow { border-left: 6px solid #f59e0b; }
+.red { border-left: 6px solid #ef4444; }
+
+.card h2 {
+  margin-top: 0;
+}
